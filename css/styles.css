@@ -1,0 +1,93 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.intro{
+    padding: 70px 15% 70px 60%;
+}
+
+.intro__title {
+    background-color: rgba(0, 0, 100, 0.733);
+    color: white;
+    margin-left: 105px;
+}
+
+.intro__subtitle {
+    background-color: rgba(0, 0, 100, 0.733);
+    color: white;
+    margin-left: 120px;
+}
+
+.header__nav {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.header__lista {
+    display: inline;
+    list-style: none;
+}
+
+.header__item {
+    display: inline;
+}
+
+.header__item__link {
+    color: white;
+    font-weight: bold;
+}
+
+.header__logo {
+    display: inline;
+    max-width: 2%;
+    max-height: 2%;
+    margin: 10px;
+}
+
+.skills__img{
+    max-width: 3.5%;
+    max-height: 3.5%;
+}
+
+.skills__article {
+    display: inline;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.footer__item{
+    display: inline;
+}
+
+.footer__text {
+    color: white;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.footer__links {
+    color: white;
+}
+
+/* About me page */
+
+.story {
+    padding: 25px 65% 25px 100px;
+}
+
+.story__text {
+    padding-top: 20px;
+}
+
+.story__list {
+    padding-top: 20px;
+    margin-left: 25px;
+}
+
+/* contact page */
+.form {
+    padding: 25px 85% 25px 100px;
+}

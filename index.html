@@ -4,28 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Home</title>
 </head>
 <body>
     <header> <!-- Header section -->
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pages/about-me.html">Sobre mi</a></li>
-            <li><a href="pages/studies.html">Estudios</a></li>
-            <li><a href="pages/portfolio.html">Portfolio</a></li>
-            <li><a href="pages/contact.html">Contacto</a></li>
-        </ul>
+        <nav class="header__nav">
+            <img class="header__logo" src="media/logo.png" alt="Logo">
+            <ul class="header__lista">
+                <li class="header__item"><a class="header__item__link" href="index.html">Inicio</a></li>
+                <li class="header__item"><a class="header__item__link" href="pages/about-me.html">Sobre mi</a></li>
+                <li class="header__item"><a class="header__item__link" href="pages/studies.html">Estudios</a></li>
+                <li class="header__item"><a class="header__item__link" href="pages/portfolio.html">Portfolio</a></li>
+                <li class="header__item"><a class="header__item__link" href="pages/contact.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main> <!-- Main section -->
-        <h1>Bienvenidos!</h1>
+        <section class="intro">
+            <h1><span class="intro__title">Nicolás Temprano</span></h1>
+            <h2><span class="intro__subtitle">Web developer</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil quisquam iste iure, doloremque ut quae nostrum porro labore placeat ullam saepe, assumenda, optio reprehenderit. Quibusdam voluptate incidunt nihil veniam?</p>
+        </section>
+        <section class="skills">
+            <h1>SKILLS</h1>
+            <article class="skills__article">
+                <h2>HTML</h2>
+                <img class="skills__img" src="media/mid-low-battery.png" alt="battery">
+            </article>
+            <article class="skills__article">
+                <h2>CSS</h2>
+                <img class="skills__img" src="media/low-battery.png" alt="battery">
+            </article>
+        </section>
+        <section class="work">
+            <h1>Trabajos más recientes</h1>
+            <article class="work__article">
+                <img src="media/not-available.png" alt="imagen-trabajo1">
+                <div>
+                    <h2>Titulo</h2>
+                    <p>Descripción</p>
+                </div>
+            </article>
+            <article class="work__article">
+                <img src="media/not-available.png" alt="imagen-trabajo1">
+                <div>
+                    <h2>Titulo</h2>
+                    <p>Descripción</p>
+                </div>
+            </article>
+            <article class="work__article">
+                <img src="media/not-available.png" alt="imagen-trabajo1">
+                <div>
+                    <h2>Titulo</h2>
+                    <p>Descripción</p>
+                </div>
+            </article>
+        </section>
     </main>
     <footer> <!-- Footer section -->
         <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Github</a></li>
-            <li><a href="#"></a></li>
+            <li class="footer__item"><a class="footer__links" href="#">Instagram</a></li>
+            <li class="footer__item"><a class="footer__links" href="#">LinkedIn</a></li>
+            <li class="footer__item"><a class="footer__links" href="#">Github</a></li>
         </ul>
+        <p class="footer__text">Powered by Nicolás Temprano</p>
+        <p class="footer__text">All rights reserved</p>
     </footer>
 </body>
 </html>

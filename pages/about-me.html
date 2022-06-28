@@ -4,31 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre mi</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Sobre mí</title>
 </head>
 <body>
     <header> <!-- Header section -->
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="about-me.html">Sobre mi</a></li>
-            <li><a href="studies.html">Estudios</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contacto</a></li>
-        </ul>
+        <nav class="header__nav">
+            <img class="header__logo" src="../media/logo.png" alt="Logo">
+            <ul class="header__lista">
+                <li class="header__item"><a class="header__item__link" href="../index.html">Inicio</a></li>
+                <li class="header__item"><a class="header__item__link" href="about-me.html">Sobre mi</a></li>
+                <li class="header__item"><a class="header__item__link" href="studies.html">Estudios</a></li>
+                <li class="header__item"><a class="header__item__link" href="portfolio.html">Portfolio</a></li>
+                <li class="header__item"><a class="header__item__link" href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
     <main> <!-- Main section -->
-        <h1>Conocé más sobre quien soy</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quam est voluptates aliquam modi, perspiciatis iste autem tempore quis iusto ea ratione facilis aperiam quas rerum odit veniam. Animi, omnis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quam est voluptates aliquam modi, perspiciatis iste autem tempore quis iusto ea ratione facilis aperiam quas rerum odit veniam. Animi, omnis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit quam est voluptates aliquam modi, perspiciatis iste autem tempore quis iusto ea ratione facilis aperiam quas rerum odit veniam. Animi, omnis.</p>
+        <section class="story">
+            <h1>¡ Hola, soy Nicolás !</h1>
+            <p class="story__text">Soy de Buenos Aires, Argentina. Actualmente me encuentro estudiando Licenciatura en Sistemas en la Facultad de Informática de la UNLP y trabajando en una compañia de seguros </p>
+            <p class="story__text">En el 2021 me di cuenta que lo que me gustaba es la programación por eso decidí empezar la carrera de sistemas y posteriormente inicié cursos para aprender más</p>
+            <p class="story__text">Mi meta es poder llegar a trabajar con Inteligencia Artifical y que mi trabajo sea de utilidad para ayudar a la gente en el día a día</p>
+            <ul class="story__list">
+                <li>Me gusta trabajar en equipo y aprender cosas nuevas</li>
+                <li>Soy proactivo.</li>
+                <li>Busco diferentes puntos de vista para enriquecer mis proyectos</li>
+            </ul>
+        </section>
     </main>
     <footer> <!-- Footer section -->
         <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">Github</a></li>
-            <li><a href="#"></a></li>
+            <li class="footer__item"><a class="footer__links" href="#">Instagram</a></li>
+            <li class="footer__item"><a class="footer__links" href="#">LinkedIn</a></li>
+            <li class="footer__item"><a class="footer__links" href="#">Github</a></li>
         </ul>
+        <p class="footer__text">Powered by Nicolás Temprano</p>
+        <p class="footer__text">All rights reserved</p>
     </footer>
 </body>
 </html>
