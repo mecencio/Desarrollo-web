@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=The+Nautigal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Contact</title>
 </head>
 <body>
     <header> <!-- Header section -->
         <nav class="header__nav">
-            <img class="header__logo" src="../media/logo.png" alt="Logo">
+            <h1 class="header__title">NICOLAS TEMPRANO</h1>
             <ul class="header__lista">
                 <li class="header__item"><a class="header__item__link" href="../index.html">Inicio</a></li>
                 <li class="header__item"><a class="header__item__link" href="about-me.html">Sobre mi</a></li>
@@ -21,19 +24,29 @@
         </nav>
     </header>
     <main> <!-- Main section -->
-        <h1>Hablemos!</h1>
-        <form class="form" method="POST">
-            <label for="name">Nombre y apellido: </label>
-            <input type="text" name="name">
-            <label for="email">email de contacto: </label>
-            <input type="email" name="email">
-            <label for="message">Dejá tu mensaje:</label>
-            <textarea name="message" cols="30" rows="10"></textarea>
-            <input type="submit">
-        </form>
+        <section class="contact">
+            <h1 class="contact__title">Contactarme</h1>
+            <article class="contact__article">
+                <form class="contact__form" method="POST">
+                    <label for="name">Nombre y apellido: </label>
+                    <input type="text" name="name">
+                    <label for="email">email de contacto: </label>
+                    <input type="email" name="email">    
+                    <label for="subject">Asunto: </label>
+                    <input type="text" name="subject">    
+                    <label for="message">Dejá tu mensaje:</label>
+                    <textarea name="message" cols="30" rows="10"></textarea>    
+                    <input type="submit">
+                </form>
+                <div class="contact__textbox">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod non unde, vero quidem aperiam ipsa sapiente pariatur, a esse illum eius quibusdam porro aliquam. Explicabo deleniti incidunt fugit obcaecati rerum.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod non unde, vero quidem aperiam ipsa sapiente pariatur, a esse illum eius quibusdam porro aliquam. Explicabo deleniti incidunt fugit obcaecati rerum.</p>
+                </div>
+            </article>
+        </section>
     </main>
     <footer> <!-- Footer section -->
-        <ul>
+        <ul class="footer__list">
             <li class="footer__item"><a class="footer__links" href="#">Instagram</a></li>
             <li class="footer__item"><a class="footer__links" href="#">LinkedIn</a></li>
             <li class="footer__item"><a class="footer__links" href="#">Github</a></li>

@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=The+Nautigal&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Home</title>
 </head>
 <body>
     <header> <!-- Header section -->
         <nav class="header__nav">
-            <img class="header__logo" src="media/logo.png" alt="Logo">
+            <h1 class="header__title">NICOLAS TEMPRANO</h1>
             <ul class="header__lista">
                 <li class="header__item"><a class="header__item__link" href="index.html">Inicio</a></li>
                 <li class="header__item"><a class="header__item__link" href="pages/about-me.html">Sobre mi</a></li>
@@ -22,48 +25,77 @@
     </header>
     <main> <!-- Main section -->
         <section class="intro">
-            <h1><span class="intro__title">Nicolás Temprano</span></h1>
-            <h2><span class="intro__subtitle">Web developer</span></h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic nihil quisquam iste iure, doloremque ut quae nostrum porro labore placeat ullam saepe, assumenda, optio reprehenderit. Quibusdam voluptate incidunt nihil veniam?</p>
+            <img class="intro__img" src="media/foto-perfil.png" alt="foto-perfil">
+            <article class="intro__text">
+                <h1 class="intro__title">Nicolás Temprano</h1>
+                <h2 class="intro__subtitle">Web developer</h2>
+                <p class="intro__textbox">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas aliquam delectus quo architecto alias, sint consequatur dolore odio aperiam molestiae, ullam eligendi, pariatur est maxime quas deserunt qui natus eius!</p>
+            </article>
         </section>
         <section class="skills">
-            <h1>SKILLS</h1>
-            <article class="skills__article">
-                <h2>HTML</h2>
-                <img class="skills__img" src="media/mid-low-battery.png" alt="battery">
-            </article>
-            <article class="skills__article">
-                <h2>CSS</h2>
-                <img class="skills__img" src="media/low-battery.png" alt="battery">
-            </article>
+            <h1 class="skills__title">SKILLS</h1>
+            <div class="skills__container">
+                <img class="skills__img--destacada" src="media/computer.png" alt="computer-image">
+                <article class="skills__left">
+                    <p class="skills__text">Las siguientes habilidades las fue aprendiendo en distintos ambitos y al día de hoy sigo perfeccionandome para poder mejorar cada aspecto de ellas. Para saber más podes visitar la sección <a href="pages/studies.html">estudios</a></p>
+                    <div class="skills__article">
+                        <div class="skills__items" >
+                            <h2>HTML</h2>
+                            <img class="skills__img" src="media/mid-low-battery.png" alt="battery">
+                        </div>
+                        <div class="skills__items">
+                            <h2>CSS</h2>
+                            <img class="skills__img" src="media/low-battery.png" alt="battery">
+                        </div>
+                        <div class="skills__items">
+                            <h2>JS</h2>
+                            <img class="skills__img" src="media/low-battery.png" alt="battery">
+                        </div>
+                        <div class="skills__items">
+                            <h2>Python</h2>
+                            <img class="skills__img" src="media/mid-battery.png" alt="battery">
+                        </div>
+                        <div class="skills__items">
+                            <h2>DJango</h2>
+                            <img class="skills__img" src="media/mid-battery.png" alt="battery">
+                        </div>
+                        <div class="skills__items">
+                            <h2>SQL</h2>
+                            <img class="skills__img" src="media/mid-battery.png" alt="battery">
+                        </div>    
+                    </div>
+                </article>
+            </div>
         </section>
         <section class="work">
-            <h1>Trabajos más recientes</h1>
-            <article class="work__article">
-                <img src="media/not-available.png" alt="imagen-trabajo1">
-                <div>
-                    <h2>Titulo</h2>
-                    <p>Descripción</p>
-                </div>
-            </article>
-            <article class="work__article">
-                <img src="media/not-available.png" alt="imagen-trabajo1">
-                <div>
-                    <h2>Titulo</h2>
-                    <p>Descripción</p>
-                </div>
-            </article>
-            <article class="work__article">
-                <img src="media/not-available.png" alt="imagen-trabajo1">
-                <div>
-                    <h2>Titulo</h2>
-                    <p>Descripción</p>
-                </div>
-            </article>
+            <h1 class="work__title">Trabajos más recientes</h1>
+            <div class="work_container">
+                <article class="work__article">
+                    <img src="media/not-available.png" alt="imagen-trabajo1">
+                    <div>
+                        <h2>Titulo</h2>
+                        <p>Descripción</p>
+                    </div>
+                </article>
+                <article class="work__article">
+                    <img src="media/not-available.png" alt="imagen-trabajo1">
+                    <div>
+                        <h2>Titulo</h2>
+                        <p>Descripción</p>
+                    </div>
+                </article>
+                <article class="work__article">
+                    <img src="media/not-available.png" alt="imagen-trabajo1">
+                    <div>
+                        <h2>Titulo</h2>
+                        <p>Descripción</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
     <footer> <!-- Footer section -->
-        <ul>
+        <ul class="footer__list">
             <li class="footer__item"><a class="footer__links" href="#">Instagram</a></li>
             <li class="footer__item"><a class="footer__links" href="#">LinkedIn</a></li>
             <li class="footer__item"><a class="footer__links" href="#">Github</a></li>
