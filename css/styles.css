@@ -12,6 +12,7 @@ body {
     background-color: #2d6760;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 20px 0 20px 20px;
 }
 
@@ -38,20 +39,33 @@ body {
     background-size:100%;
     background-color: #2d6760;
     border-style: none;
+    margin-right: 1rem;
 }
 
 .header__button:hover {
     display: inline-block;
     padding: 10px;
     background-color: gray;
+    border-radius:5px;
     cursor: pointer;
 }
 
 .header__lista {
-    display: flex;
+    position: absolute;
+    display: none;
+    top: 100%;
+    right: 0;
+    min-width: 200px;
+    background: #3d8b82;
     list-style: none;
-    flex-wrap: wrap;
-    align-items: center;
+}
+
+.header__dropdown:hover .header__lista {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    border: solid 1px gray;
+    box-shadow: inset 0px 0px 10px 1px gray;
 }
 
 .header__item {
@@ -112,15 +126,44 @@ body {
 .intro__title {
     font-size: 100px;
     text-align: center;
+    padding-bottom: .7rem;
 }
 
 .intro__subtitle {
     font-size: 64px;
     text-align: center;
+    padding-bottom: .7rem;
 }
 
 .intro__textbox{
     text-align: center;
+}
+
+/*  MEDIA QUERY PHONE */
+@media (min-width: 320px) and (max-width: 575px) {
+    .intro__img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .intro__title {
+        font-size: 32px;
+    }
+
+    .intro__subtitle {
+    font-size: 24px;
+    }
+}
+
+/*  MEDIA QUERY TABLET */
+@media (min-width: 576px) and (max-width: 992px) {
+    .intro__title {
+        font-size: 50px;
+    }
+
+    .intro__subtitle {
+    font-size: 40px;
+    }
 }
 
 .skills__title {
