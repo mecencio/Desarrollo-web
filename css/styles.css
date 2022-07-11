@@ -12,60 +12,24 @@ body {
     background-color: #2d6760;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    align-items: center;
     padding: 20px 0 20px 20px;
 }
 
 .header__title {
-    padding-right: 20px;
     color: white;
     font-weight: bold;
     user-select: none;
-}
-
-.header__dropdown {
-    position: relative;
-    display: inline-block;
-    z-index: 1;
+    margin: auto 40px;
 }
 
 .header__button {
-    width:2em;
-    height:2em;
-    vertical-align:middle;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:100%;
-    background-color: #2d6760;
-    border-style: none;
-    margin-right: 1rem;
-}
-
-.header__button:hover {
-    display: inline-block;
-    padding: 10px;
-    background-color: #204944;
-    border-radius:5px;
-    cursor: pointer;
+    display: none;
 }
 
 .header__lista {
-    position: absolute;
-    display: none;
-    top: 100%;
-    right: 0;
-    min-width: 100px;
-    background: #3d8b82;
+    display: flex;
     list-style: none;
-}
-
-.header__dropdown:hover .header__lista {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    border: solid 1px gray;
-    box-shadow: inset 0px 0px 10px 1px gray;
 }
 
 .header__item {
@@ -167,7 +131,9 @@ body {
 }
 
 .skills__article {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -292,7 +258,7 @@ footer {
 }
 
 /* About me page */
-.about-me__title {
+.aboutme__title {
     padding: 30px;
     font-size: 100px;
     text-align: center;
@@ -340,7 +306,10 @@ footer {
 }
 
 .experience_container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
     justify-content: space-around;
     margin-bottom: 50px;
 }
@@ -442,6 +411,62 @@ footer {
 
 /*  MEDIA QUERY PHONE */
 @media (min-width: 320px) and (max-width: 575px) {
+
+    .header__title {
+        margin: auto 20px;
+    }
+
+    .header__dropdown {
+        position: relative;
+        display: inline-block;
+        z-index: 1;
+    }
+    
+    .header__button {
+        display: inline-block;
+        width:2em;
+        height:2em;
+        vertical-align: middle;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255,255,255)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:100%;
+        background-color: #2d6760;
+        border-style: none;
+        margin-right: 1rem;
+    }
+    
+    .header__button:hover {
+        display: inline-block;
+        padding: 10px;
+        background-color: #204944;
+        border-radius:5px;
+        cursor: pointer;
+    }
+    
+    .header__lista {
+        position: absolute;
+        display: none;
+        top: 100%;
+        right: 0;
+        min-width: 100px;
+        background: #3d8b82;
+        list-style: none;
+    }
+    
+    .header__dropdown:hover .header__lista {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        border: solid 1px gray;
+        box-shadow: inset 0px 0px 10px 1px gray;
+    } 
+    
+    .header__nav {
+    justify-content: space-between;
+    }
+    
+
     .intro{
         grid-template-columns: 1fr;
     }
@@ -468,6 +493,12 @@ footer {
     footer {
         flex-direction: column;
     }
+
+    /* About me page */
+    .aboutme__title {
+        padding: 30px;
+        font-size: 32px;
+    }
 }
 
 /*  MEDIA QUERY TABLET */
@@ -489,4 +520,44 @@ footer {
         height: auto;
     }
 
+    /* About me page */
+    .aboutme__title {
+        padding: 30px;
+        font-size: 50px;
+    }
+
+    .experience {
+        padding: 35px;
+    }
+    
+    .experience__title {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    
+    .experience_container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    
+    .experience__article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        width: 400px;
+        border: 2px solid black;
+        box-shadow: 15px 20px 25px -5px rgb(0,0,0,0.25);
+        border-radius: 12px;
+        margin-top: 25px;
+        padding: 10px;
+    }
+    
+    .experience__img {
+        max-width: 150px;
+        max-height: 150px;
+        padding-bottom: 20px;
+    }
+    
 }
