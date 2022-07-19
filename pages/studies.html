@@ -14,77 +14,94 @@
     <title>Studies</title>
 </head>
 <body>
-    <header> <!-- Header section -->
-        <nav class="header__nav">
-            <h1 class="header__title">NICOLAS TEMPRANO</h1>
-            <section class="header__dropdown">
-                <button class="header__button"></button>
-                <ul class="header__lista">
-                    <li class="header__item"><a class="header__item__link" href="../index.html">Inicio</a></li>
-                    <li class="header__item"><a class="header__item__link" href="about-me.html">Sobre mi</a></li>
-                    <li class="header__item"><a class="header__item__link" href="studies.html">Estudios</a></li>
-                    <li class="header__item"><a class="header__item__link" href="portfolio.html">Portfolio</a></li>
-                    <li class="header__item"><a class="header__item__link" href="contact.html">Contacto</a></li>
-                </ul>
-            </section>
+    <!-- Header section -->
+    <header> 
+        <nav class="navbar navbar-dark navbar-expand-lg header__nav">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand">NICOLAS TEMPRANO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-me.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="studies.html"><span class="active px-2">Estudios</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main> <!-- Main section -->
-        <section class="studies-header">
-            <h1 class="studies-header__title">Estudios</h1>
-            <p class="studies-header__textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, nisi dolorum voluptas, sapiente blanditiis reiciendis ea minima enim laboriosam dolores ipsum nam explicabo. Eaque id cum dolore tenetur neque quaerat?</p>
+    <!-- Main section -->
+    <main> 
+        <section class="studies__header">
+            <h1 class="studies__title">Estudios</h1>
+            <p class="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, nisi dolorum voluptas, sapiente blanditiis reiciendis ea minima enim laboriosam dolores ipsum nam explicabo. Eaque id cum dolore tenetur neque quaerat?</p>
         </section>
-        <section class="studies">
-            <article class="studies__article">
-                <img class="studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
-                <div>
-                    <h2 class="studies__subtitle">Titulo</h2>
-                    <p class="studies__textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
-                </div>
-            </article>
-            <article class="studies__article">
-                <img class="studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
-                <div>
-                    <h2 class="studies__subtitle">Titulo</h2>
-                    <p class="studies__textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
-                </div>
-            </article>
-            <article class="studies__article">
-                <img class="studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
-                <div>
-                    <h2 class="studies__subtitle">Titulo</h2>
-                    <p class="studies__textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
-                </div>
-            </article>
-            <article class="studies__article">
-                <img class="studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
-                <div>
-                    <h2 class="studies__subtitle">Titulo</h2>
-                    <p class="studies__textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
-                </div>
-            </article>
-            <article class="studies__article">
-                <img class="studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
-                <div>
-                    <h2 class="studies__subtitle">Titulo</h2>
-                    <p class="studies__textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
-                </div>
-            </article>
-            <article class="studies__article">
-                <img class="studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
-                <div>
-                    <h2 class="studies__subtitle">Titulo</h2>
-                    <p class="studies__textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
-                </div>
-            </article>
+        <section class="container-fluid studies my-3">
+            <div class="row justify-content-around">
+                <article class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 mx-3 my-3 px-0 studies__article">
+                    <img class="card-img-top studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
+                    <div>
+                        <h2 class="card-subtitle mb-2 studies__subtitle">Titulo</h2>
+                        <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
+                    </div>
+                </article>
+                <article class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 mx-3 my-3 px-0 studies__article">
+                    <img class="card-img-top studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
+                    <div>
+                        <h2 class="card-subtitle mb-2 studies__subtitle">Titulo</h2>
+                        <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
+                    </div>
+                </article>
+                <article class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 mx-3 my-3 px-0 studies__article">
+                    <img class="card-img-top studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
+                    <div>
+                        <h2 class="card-subtitle mb-2 studies__subtitle">Titulo</h2>
+                        <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
+                    </div>
+                </article>
+                <article class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 mx-3 my-3 px-0 studies__article">
+                    <img class="card-img-top studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
+                    <div>
+                        <h2 class="card-subtitle mb-2 studies__subtitle">Titulo</h2>
+                        <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
+                    </div>
+                </article>
+                <article class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 mx-3 my-3 px-0 studies__article">
+                    <img class="card-img-top studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
+                    <div>
+                        <h2 class="card-subtitle mb-2 studies__subtitle">Titulo</h2>
+                        <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
+                    </div>
+                </article>
+                <article class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 mx-3 my-3 px-0 studies__article">
+                    <img class="card-img-top studies__image" src="../media/open-book.png" alt="imagen-trabajo1">
+                    <div>
+                        <h2 class="card-subtitle mb-2 studies__subtitle">Titulo</h2>
+                        <p class="card-text p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ex ut harum fugiat laborum eius in consequuntur eaque repellendus officiis, totam placeat praesentium omnis ullam exercitationem doloremque, accusantium incidunt modi.</p>
+                    </div>
+                </article>
+            </div>
         </section>
-
     </main>
-    <footer> <!-- Footer section -->
+    <!-- Footer section -->
+    <footer>
         <ul class="footer__list">
-            <li class="footer__item"><a class="footer__links" href="#">Instagram</a></li>
-            <li class="footer__item"><a class="footer__links" href="#">LinkedIn</a></li>
-            <li class="footer__item"><a class="footer__links" href="#">Github</a></li>
+            <li class="footer__item"><a class="footer__links" href="https://www.linkedin.com/in/nicol%C3%A1s-nahuel-temprano-17125116b/">LinkedIn</a></li>
+            <li class="footer__item"><a class="footer__links" href="https://github.com/mecencio/">Github</a></li>
         </ul>
         <p class="footer__text">Powered by Nicolás Temprano</p>
         <p class="footer__text">All rights reserved</p>

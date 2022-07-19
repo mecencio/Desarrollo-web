@@ -14,22 +14,38 @@
     <title>Sobre mí</title>
 </head>
 <body>
-    <header> <!-- Header section -->
-        <nav class="header__nav">
-            <h1 class="header__title">NICOLAS TEMPRANO</h1>
-            <section class="header__dropdown">
-                <button class="header__button"></button>
-                <ul class="header__lista">
-                    <li class="header__item"><a class="header__item__link" href="../index.html">Inicio</a></li>
-                    <li class="header__item"><a class="header__item__link" href="about-me.html">Sobre mi</a></li>
-                    <li class="header__item"><a class="header__item__link" href="studies.html">Estudios</a></li>
-                    <li class="header__item"><a class="header__item__link" href="portfolio.html">Portfolio</a></li>
-                    <li class="header__item"><a class="header__item__link" href="contact.html">Contacto</a></li>
-                </ul>
-            </section>
+    <!-- Header section -->
+    <header> 
+        <nav class="navbar navbar-dark navbar-expand-lg header__nav">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand">NICOLAS TEMPRANO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="about-me.html"><span class="active px-2">Sobre mi</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="studies.html">Estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main> <!-- Main section -->
+    <!-- Main section -->
+    <main> 
         <h1 class="aboutme__title">Sobre mi</h1>
         <section class="story">
             <article class="story__textbox">
@@ -37,74 +53,82 @@
                 <p class="story__text">Soy de Buenos Aires, Argentina. Actualmente me encuentro estudiando Licenciatura en Sistemas en la Facultad de Informática de la UNLP y trabajando en una compañia de seguros </p>
                 <p class="story__text">En el 2021 me di cuenta que lo que me gustaba es la programación por eso decidí empezar la carrera de sistemas y posteriormente inicié cursos para aprender más</p>
                 <p class="story__text">Mi meta es poder llegar a trabajar con Inteligencia Artifical y que mi trabajo sea de utilidad para ayudar a la gente en el día a día</p>
-                <ul class="story__list">
-                    <li>Me gusta trabajar en equipo y aprender cosas nuevas</li>
-                    <li>Soy proactivo.</li>
-                    <li>Busco diferentes puntos de vista para enriquecer mis proyectos</li>
-                </ul>
             </article>
             <article class="story__checkarticle">
                 <div class="story__checkbox">
                     <svg xmlns="http://www.w3.org/2000/svg" class="story__checkicon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
-                    <p>Aptitud</p>
+                    <p>Me gusta trabajar en equipo y aprender cosas nuevas</p>
                 </div>
                 <div class="story__checkbox">
                     <svg xmlns="http://www.w3.org/2000/svg" class="story__checkicon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
-                    <p>Aptitud</p>
+                    <p>Soy proactivo</p>
                 </div>
                 <div class="story__checkbox">
                     <svg xmlns="http://www.w3.org/2000/svg" class="story__checkicon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
-                    <p>Aptitud</p>
-                </div>
-                <div class="story__checkbox">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="story__checkicon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <p>Aptitud</p>
+                    <p>Busco diferentes puntos de vista para enriquecer mis proyectos</p>
                 </div>
                 <div class="story__imagebox">
-                    <img class="story__image" src="../media/linkedin.png" alt="">
-                    <img class="story__image" src="../media/github.png" alt="">
+                    <a href="https://www.linkedin.com/in/nicol%C3%A1s-nahuel-temprano-17125116b/"><img class="story__image" src="../media/linkedin.png" alt=""></a>
+                    <a href="https://github.com/mecencio/"><img class="story__image" src="../media/github.png" alt=""></a>
                 </div>
             </article>
         </section>
-        <section class="experience">
+        <section class="container-fluid experience">
             <h1 class="experience__title">Experiencia laboral</h1>
-            <div class="experience__container">
-                <article class="experience__article">
+            <div class="row justify-content-center">
+                <div class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 my-3 mx-3 my-lg-0 px-0">
+                    <h5 class="card-header">Titulo</h5>
+                    <div class="card-body experience__article">
                     <img class="experience__image" src="../media/suitcase.png" alt="imagen-trabajo">
-                    <div>
-                        <h2>Titulo</h2>
-                        <p>Descripción</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic illum blanditiis velit unde quis sit aliquam quasi, a saepe quia laudantium labore quibusdam adipisci tempora, esse numquam veniam laboriosam qui.</p>
+                        <p>Tareas</p>
+                        <ul>
+                            <li>Tarea</li>
+                            <li>Tarea</li>
+                            <li>Tarea</li>
+                        </ul>
                     </div>
-                </article>
-                <article class="experience__article">
+                </div>
+                <div class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 my-3 mx-3 my-lg-0 px-0">
+                    <h5 class="card-header">Titulo</h5>
+                    <div class="card-body experience__article">
                     <img class="experience__image" src="../media/suitcase.png" alt="imagen-trabajo">
-                    <div>
-                        <h2>Titulo</h2>
-                        <p>Descripción</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic illum blanditiis velit unde quis sit aliquam quasi, a saepe quia laudantium labore quibusdam adipisci tempora, esse numquam veniam laboriosam qui.</p>
+                        <p>Tareas</p>
+                        <ul>
+                            <li>Tarea</li>
+                            <li>Tarea</li>
+                            <li>Tarea</li>
+                        </ul>
                     </div>
-                </article>
-                <article class="experience__article">
+                </div>
+                <div class="card col-xs-12 col-md-5 col-lg-3 my-3 mx-3 my-lg-0 px-0">
+                    <h5 class="card-header">Titulo</h5>
+                    <div class="card-body experience__article">
                     <img class="experience__image" src="../media/suitcase.png" alt="imagen-trabajo">
-                    <div>
-                        <h2>Titulo</h2>
-                        <p>Descripción</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic illum blanditiis velit unde quis sit aliquam quasi, a saepe quia laudantium labore quibusdam adipisci tempora, esse numquam veniam laboriosam qui.</p>
+                        <p>Tareas</p>
+                        <ul>
+                            <li>Tarea</li>
+                            <li>Tarea</li>
+                            <li>Tarea</li>
+                        </ul>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
     </main>
-    <footer> <!-- Footer section -->
+    <!-- Footer section -->
+    <footer>
         <ul class="footer__list">
-            <li class="footer__item"><a class="footer__links" href="#">LinkedIn</a></li>
-            <li class="footer__item"><a class="footer__links" href="#">Github</a></li>
+            <li class="footer__item"><a class="footer__links" href="https://www.linkedin.com/in/nicol%C3%A1s-nahuel-temprano-17125116b/">LinkedIn</a></li>
+            <li class="footer__item"><a class="footer__links" href="https://github.com/mecencio/">Github</a></li>
         </ul>
         <p class="footer__text">Powered by Nicolás Temprano</p>
         <p class="footer__text">All rights reserved</p>

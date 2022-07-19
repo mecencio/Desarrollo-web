@@ -14,22 +14,38 @@
     <title>Home</title>
 </head>
 <body>
-    <header> <!-- Header section -->
-        <nav class="header__nav">
-            <h1 class="header__title">NICOLAS TEMPRANO</h1>
-            <section class="header__dropdown">
-                <button class="header__button"></button>
-                <ul class="header__lista">
-                    <li class="header__item"><a class="header__item__link" href="index.html">Inicio</a></li>
-                    <li class="header__item"><a class="header__item__link" href="pages/about-me.html">Sobre mi</a></li>
-                    <li class="header__item"><a class="header__item__link" href="pages/studies.html">Estudios</a></li>
-                    <li class="header__item"><a class="header__item__link" href="pages/portfolio.html">Portfolio</a></li>
-                    <li class="header__item"><a class="header__item__link" href="pages/contact.html">Contacto</a></li>
-                </ul>
-            </section>
+    <!-- Header section -->
+    <header> 
+        <nav class="navbar navbar-dark navbar-expand-lg header__nav">
+            <div class="container-fluid">
+                <a href="../index.html" class="navbar-brand">NICOLAS TEMPRANO</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html"><span class="active px-2">Inicio</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/about-me.html">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/studies.html">Estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main> <!-- Main section -->
+    <!-- Main section -->
+    <main> 
         <section class="intro">
             <img class="intro__image" src="media/foto-perfil.png" alt="foto-perfil">
             <article class="intro__text">
@@ -73,37 +89,38 @@
                 </article>
             </div>
         </section>
-        <section class="work">
+        <section class="container-fluid work">
             <h1 class="work__title">Trabajos más recientes</h1>
-            <div class="work_container">
-                <article class="work__article">
-                    <img src="media/not-available.png" alt="imagen-trabajo1" class="work__image">
-                    <div>
-                        <h2>Titulo</h2>
-                        <p>Descripción</p>
+            <div class="row justify-content-around">
+                <article class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 my-3 my-lg-0 px-0 work__article">
+                    <img src="media/not-available.png" alt="imagen-trabajo1" class="card-img-top work__image">
+                    <div class="card-body">
+                        <h2 class="card-subtitle mb-2">Titulo</h2>
+                        <p class="card-text">Descripción</p>
                     </div>
                 </article>
-                <article class="work__article">
-                    <img src="media/not-available.png" alt="imagen-trabajo1" class="work__image">
-                    <div>
-                        <h2>Titulo</h2>
-                        <p>Descripción</p>
+                <article class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 my-3 my-lg-0 px-0 work__article">
+                    <img src="media/not-available.png" alt="imagen-trabajo1" class="card-img-top work__image">
+                    <div class="card-body">
+                        <h2 class="card-subtitle mb-2">Titulo</h2>
+                        <p class="card-text">Descripción</p>
                     </div>
                 </article>
-                <article class="work__article">
-                    <img src="media/not-available.png" alt="imagen-trabajo1" class="work__image">
-                    <div>
-                        <h2>Titulo</h2>
-                        <p>Descripción</p>
+                <article class="card col-xs-12 col-md-5 col-lg-3 mx-xs-0 my-3 my-lg-0 px-0 work__article">
+                    <img src="media/not-available.png" alt="imagen-trabajo1" class="card-img-top work__image">
+                    <div class="card-body">
+                        <h2 class="card-subtitle mb-2">Titulo</h2>
+                        <p class="card-text">Descripción</p>
                     </div>
                 </article>
             </div>
         </section>
     </main>
-    <footer> <!-- Footer section -->
+    <!-- Footer section -->
+    <footer>
         <ul class="footer__list">
-            <li class="footer__item"><a class="footer__links" href="#">LinkedIn</a></li>
-            <li class="footer__item"><a class="footer__links" href="#">Github</a></li>
+            <li class="footer__item"><a class="footer__links" href="https://www.linkedin.com/in/nicol%C3%A1s-nahuel-temprano-17125116b/">LinkedIn</a></li>
+            <li class="footer__item"><a class="footer__links" href="https://github.com/mecencio/">Github</a></li>
         </ul>
         <p class="footer__text">Powered by Nicolás Temprano</p>
         <p class="footer__text">All rights reserved</p>
