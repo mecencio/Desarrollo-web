@@ -1,0 +1,30 @@
+/* FOOTER */
+footer {
+    background-color: $color-principal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .footer{
+        &__list {
+            display: flex;
+            align-items: center; 
+        }
+        
+        &__item {
+            list-style: none;
+            padding: 10px 5px; 
+        }
+        
+        &__text {
+            color: white;
+            font-weight: bold;
+            padding-top: 5px; 
+        }
+        
+        &__links {
+            color: white; 
+        }
+    }
+
+}
