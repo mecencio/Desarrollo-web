@@ -6,13 +6,20 @@
 
     .intro{
         grid-template-columns: 1fr;
-    }
-    .intro__title {
-        font-size: 32px;
-    }
 
-    .intro__subtitle {
-    font-size: 24px;
+        @keyframes intro_title_effect_xs {
+            0% { font-size: 0;}
+            100% {font-size: $font-xs-title;}
+        }
+
+        &__title {
+            font-size: $font-xs-title;
+            animation-name: intro_title_effect_xs;
+        }
+
+        &__subtitle {
+            font-size: $font-xs-subtitle;
+            }
     }
 
     .skills__image--destacada {
@@ -26,20 +33,28 @@
     /* About me page */
     .aboutme__title {
         padding: 30px;
-        font-size: 32px;
+        font-size: $font-xs-title;
     }
 
     .story {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-    }
 
-    .story__checkarticle {
-        margin-top: 2rem;
-    }
+        &__checkarticle {
+            margin-top: 2rem;
+        }
 
-    .story__image {
-        max-width: 10%;
+        &__image {
+            max-width: 10%;
+        }
+
+        &__imagebox {
+            margin-top: 1rem;
+        }
+
+        &__image {
+            max-width: 15%;
+        }
     }
 
     .experience__article {
@@ -49,47 +64,44 @@
         padding: 10px;
     }
 
-    .story__imagebox {
-        margin-top: 1rem;
-    }
-
-    .story__image {
-        max-width: 15%;
-    }
-
     /* Studies page */
-    .studies__title {
-        font-size: 32px;
-    }
-
     .studies {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 4rem;
+
+        &__title {
+            font-size: $font-xs-title;
+        }
     }
 
     /* Portfolio page */
-    .portfolio__title {
-        font-size: 32px;
-    }
-
-    .portfolio__article {
-        flex-direction: column;
-    }
-
-    .portfolio__subtitle {
-        font-size: 24px;
+    .portfolio{
+        &__title {
+            font-size: $font-xs-title;
+        }
+    
+        &__article {
+            flex-direction: column;
+        }
+    
+        &__subtitle {
+            font-size: $font-xs-subtitle;
+        }
+    
     }
 
     /* contact page */
-    .contact__title {
-        font-size: 32px;
-    }
+    .contact{
+        &__title {
+            font-size: $font-xs-title;
+        }
 
-    .contact__article {
-        display: flex;
-        flex-direction: column-reverse;
+        &__article {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
 }
 
@@ -99,17 +111,26 @@
     justify-content: space-between;
     }
 
-    .intro__image {
-        max-width: 50%;
+    .intro {
+        &__image {
+            max-width: 50%;
+        }
+    
+        @keyframes intro_title_effect_md {
+            0% { font-size: 0;}
+            100% {font-size: $font-md-title;}
+        }
+
+        &__title {
+            font-size: $font-md-title;
+            animation-name: intro_title_effect_md;
+        }
+    
+        &__subtitle {
+        font-size: $font-md-subtitle;
+        }
     }
 
-    .intro__title {
-        font-size: 50px;
-    }
-
-    .intro__subtitle {
-    font-size: 40px;
-    }
 
     .skills__image--destacada {
         max-width: 40%;
@@ -122,62 +143,66 @@
 
     /* About me page */
     .aboutme__title {
-        font-size: 50px;
+        font-size: $font-md-title;
     }
 
     .story {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
-    }
 
-    .story__checkarticle {
-        margin-top: 2rem;
-    }
-
-    .story__image {
-        max-width: 10%;
-    }
-
-    .story__imagebox {
-        margin-top: 1rem;
-    }
-
-    .story__image {
-        max-width: 5%;
+        &__checkarticle {
+            margin-top: 2rem;
+        }
+    
+        &__image {
+            max-width: 10%;
+        }
+    
+        &__imagebox {
+            margin-top: 1rem;
+        }
+    
+        &__image {
+            max-width: 5%;
+        }
     }
 
     /* Studies page */
-    .studies__title {
-        font-size: 50px;
-    }
-
     .studies {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 4rem;
+
+        &__title {
+            font-size: $font-md-title;
+        }
     }
 
     /* Portfolio page */
-    .portfolio__title {
-        font-size: 50px;
-    }
+    .portfolio {
+        &__title {
+            font-size: $font-md-title;
+        }
 
-    .portfolio__article {
-        flex-direction: column;
-    }
+        &__article {
+            flex-direction: column;
+        }
 
-    .portfolio__subtitle {
-        font-size: 40px;
+        &__subtitle {
+            font-size: $font-md-subtitle;
+        }
     }
 
     /* contact page */
-    .contact__title {
-        font-size: 50px;
-    }
+    .contact {
+        &__title {
+            font-size: $font-md-title;
+        }
 
-    .contact__article {
-        display: flex;
-        flex-direction: column-reverse;
+        &__article {
+            display: flex;
+            flex-direction: column-reverse;
+        }
     }
 }

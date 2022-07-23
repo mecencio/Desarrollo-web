@@ -24,6 +24,10 @@ footer {
         
         &__links {
             color: white; 
+
+            &:hover {
+                color: white;
+            }
         }
     }
 

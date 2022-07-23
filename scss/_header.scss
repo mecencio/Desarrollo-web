@@ -1,0 +1,59 @@
+.header {
+    &__nav {
+        background-color: $color-principal;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 20px 0 20px 20px;
+    }
+    
+    
+    &__logo {
+        max-width: 2%;
+        max-height: 2%;
+        margin: 10px;
+    }
+}
+
+.navbar-toggler {
+    border-width: 3px;
+    border-style: hidden;
+
+    &:focus {
+        box-shadow: none;
+        border: solid 2px white;
+    }
+}
+
+.navbar-toggler-icon {
+    color: white;
+    border: none;
+}
+
+.navbar-brand {
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+        color: white;
+        font-weight: bold;
+    }
+}
+
+.nav-link {
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+        background-color: #0596689d;
+        color: white;
+        font-weight: bold;
+        border-radius: 50px;
+    }
+}
+
+.active {
+    background-color: white;
+    color: #059669;
+    border-radius: 50px;
+}

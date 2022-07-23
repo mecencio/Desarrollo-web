@@ -1,4 +1,5 @@
 @import "variables";
+@import "header";
 @import "footer";
 
 * {
@@ -24,63 +25,6 @@ a:hover {
 
 @keyframes pulse {
     50% {box-shadow: 0px 0px 100px $color-secundario;}
-}
-
-.header__nav {
-    background-color: $color-principal;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 20px 0 20px 20px;
-}
-
-.navbar-toggler {
-    border-width: 3px;
-    border-style: hidden;
-}
-
-.navbar-toggler:focus {
-    box-shadow: none;
-    border: solid 2px white;
-}
-
-.navbar-toggler-icon {
-    color: white;
-    border: none;
-}
-
-.navbar-brand {
-    color: white;
-    font-weight: bold;
-}
-
-.navbar-brand:hover {
-    color: white;
-    font-weight: bold;
-}
-
-.nav-link {
-    color: white;
-    font-weight: bold;
-}
-
-.active {
-    background-color: white;
-    color: #059669;
-    border-radius: 50px;
-}
-
-.nav-link:hover {
-    background-color: #0596689d;
-    color: white;
-    font-weight: bold;
-    border-radius: 50px;
-}
-
-.header__logo {
-    max-width: 2%;
-    max-height: 2%;
-    margin: 10px;
 }
 
 .intro{
@@ -117,22 +61,19 @@ a:hover {
     flex-wrap: wrap;
 }
 
-@keyframes intro_title_effect {
+@keyframes intro_title_effect_lg {
     0% { font-size: 0;}
-    25% { font-size: 25px;}
-    50% {font-size: 50px;}
-    75% { font-size: 75px;}
-    100% {font-size: 100px;}
+    100% {font-size: $font-lg-title;}
 }
 
 .intro__title {
-    font-size: 100px;
+    font-size: $font-lg-title;
     text-align: center;
     padding-bottom: .7rem;
-    animation-name: intro_title_effect;
+    animation-name: intro_title_effect_lg;
     animation-iteration-count: initial;
     animation-timing-function: ease-in;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-delay: 0s;
 }
 
@@ -215,11 +156,11 @@ a:hover {
 }
 
 .work__button {
-    background-color: #059669;
+    background-color: $color-secundario;
     color: white;
     text-decoration: none;
     --bs-btn-disabled-color: #ffffff;
-    --bs-btn-disabled-bg: #0abe88;
+    --bs-btn-disabled-bg: $color-secundario;
 }
 
 .work__button:hover {
@@ -273,7 +214,7 @@ footer {
 }
 
 .portfolio__title {
-    font-size: 100px;
+    font-size: $font-lg-title;
     padding: 25px;
 }
 
@@ -297,13 +238,13 @@ footer {
 }
 
 .portfolio__subtitle {
-    font-size: 48px;
+    font-size: $font-lg-subtitle;
 }
 
 /* About me page */
 .aboutme__title {
     padding: 30px;
-    font-size: 100px;
+    font-size: $font-lg-title;
     text-align: center;
 }
 
@@ -385,7 +326,7 @@ footer {
 
 .contact__title {
     text-align: center;
-    font-size: 100px;
+    font-size: $font-lg-title;
 }
 
 .contact__form {
@@ -400,12 +341,12 @@ footer {
 }
 
 .contact__button {
-    background-color: #059669;
+    background-color: $color-secundario;
     color: white;
 }
 
 .contact__button:hover {
-    background-color: #064e3b;
+    background-color: $color-principal;
     font-weight: bold;
 }
 
@@ -425,7 +366,7 @@ footer {
 }
 
 .studies__title {
-    font-size: 100px;
+    font-size: $font-lg-title;
     padding: 25px;
 }
 
@@ -441,7 +382,7 @@ footer {
 }
 
 .studies__subtitle {
-    font-size: 48px;
+    font-size: $font-lg-subtitle;
     text-align: center;
     padding: 25px;
 }
